@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Page</title>
+    <link rel="stylesheet" type="text/css" href="3155Project.css">
+    <script src="order2JS.js"></script>
+
+</head>
+<body>
+
+<!-- this is where the nav bar will go. I think for this project the only page were going to have is an order form page and home page-->
+<header>
+
+    <!-- this is where the navigation bar is going to go -->
+    <div class="nav">
+
+        <!-- this makes sure the logo is also clickable to take the user back to the home page -->
+        <a href="home.html">
+            <img src="LaCarreta.png" alt="Logo" id="logo">
+        </a>
+
+        <!-- this puts the link in a table which makes them easier to format correctly -->
+        <div class="table">
+
+            <!-- links to the different HTML pages -->
+            <a class="navLink" id="home" href="home.html">Home</a>
+            <a class="navLink" id="orderPage" href="orderPage.html">Menu and Order</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- placing to food images and buttons in this table -->
+    <div class="foodTable">
+
+        <div class="foodItem colada">
+            <h3 class="itemName">Colada</h3>
+            <img src="img/colada.jpg" id="colada">
+            <br>
+            <p class="price">2.99</p>
+            <button type="button" class="orderButton">Add to Order</button>
+        </div>
+
+        <div class="foodItem hamCro">
+            <h3 class="itemName">Ham Croquette</h3>
+            <img src="img/croquette.jpg" id="hamCro">
+            <br>
+            <p class="price">0.99</p>
+            <button type="button" class="orderButton">Add to Order</button>
+        </div>
+
+        <div class="foodItem cortadito">
+            <h3 class="itemName">Cortadito</h3>
+            <img src="img/cortadito.jpg" id="cortadito">
+            <br>
+            <p class="price">2.99</p>
+            <button type="button" class="orderButton">Add to Order</button>
+        </div>
+
+        <div class="foodItem cheeseCro">
+            <h3 class="itemName">Cheese and Potato Croquette</h3>
+            <img src="img/cheesePotato.jpg" id="cheeseCro">
+            <br>
+            <p class="price">0.99</p>
+            <button type="button" class="orderButton">Add to Order</button>
+        </div>
+    </div>
+
+    <div class="cartContainer content-section">
+        <h2 id="cartHeader">Cart</h2>
+        <div class="cart-row">
+            <span class="cartItem cart-column">Item</span>
+            <span class="cartPrice cart-column">Price</span>
+
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="subTotalLabel">Subtotal</strong>
+            <span class="subTotal">$0</span>
+            <br>
+            <strong class="taxLabel">Tax</strong>
+            <span class="tax">$0 </span>
+            <br>
+            <strong class="totalPriceLable">Total</strong>
+            <span class="totalPrice">$0</span>
+        </div>
+    </div>
+
+    <!-- placing the forms in a table -->
+    <form class="formTable">
+
+        <div class="paymentInfo">
+            <h2>Payment Information</h2>
+            <input type="text" class="cardPay" id="nameOnCard" placeholder="Name" required>
+            <br>
+            <input type="number" class="cardPay" id="cardNum" placeholder="Card Number" required>
+            <br>
+            <input type="text" placeholder="MM/YY" class="cardPay" id="expireDate" required>
+            <input type="number" class="cardPay" id="secCode" placeholder="Security Code" required>
+        </div>
+
+        <div class="address">
+            <h2>Order Address</h2>
+            <input type="text" class="addressInput" id="address" placeholder="Address" required>
+            <input type="text" class="addressInput" id="apartment" placeholder="Apartment, Suite, etc. (Optional)">
+            <input type="text" class="addressInput" id="city" placeholder="City" required>
+            <input type="text" class="addressInput" id="state" placeholder="State" required>
+            <input type="number" class="addressInput" id="zip" placeholder="ZIP Code" required>
+
+        </div>
+
+        <br>
+        <br>
+        <button class="placeOrder" type="submit">Place Order</button>
+
+
+    </form>
+
+
+
+</main>
+
+
+<!-- just going to put some info down here to make it look like a good functional webpage -->
+<footer>
+    <h3>La Carreta Cuban Cafe</h3>
+    <p>
+        12345 Coconut Grove <br>
+        Miami, Fl 33133 <br>
+        (305)333-1234
+    </p>
+
+</footer>
+
+</body>
+</html>

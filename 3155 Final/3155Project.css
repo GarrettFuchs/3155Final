@@ -1,0 +1,328 @@
+/* this sets the font family for everything in the <body> brackets */
+body {
+    font-family: "Arial Black";
+}
+
+
+footer {
+
+    background-color: slategray;
+    color: whitesmoke;
+}
+
+.background {
+    background-image: url("img/Background.png");
+    background-size: cover;
+    background-position: top;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    text-align: center;
+
+    font-size: x-large;
+}
+
+.table {
+    display: table;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: slategray;
+
+}
+
+/* this addresses the nav link class so that we can format all the links at once */
+.navLink {
+
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align-last: center;
+    font-size: x-large;
+
+}
+
+/* adding mouseover functionality to nav bar */
+.navLink:hover {
+    background-color: gray;
+}
+
+#logo {
+    height: 120px;
+    width: 215px;
+    float: left;
+
+    margin: 10px;
+    overflow: hidden;
+}
+
+
+/* placing the home and order links next to each other */
+#home {
+    float: left;
+    overflow: hidden;
+}
+
+/* placing the home and order links next to each other */
+#orderPage {
+    float: right;
+    overflow: hidden;
+}
+
+#background {
+    width: 800px;
+    height: 550px;
+}
+
+#homeText {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+#button {
+
+    background-color: #90BFB6;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+
+}
+
+#button:hover {
+    background-color: lightslategrey;
+}
+
+/* formatting the table for the food images */
+.foodTable {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.orderButton {
+    color: white;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #90BFB6;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.orderButton:hover {
+    background-color: lightslategrey;
+}
+
+.price {
+
+    float: left;
+    margin-left: 25px;
+
+}
+
+.colada {
+    float: left;
+    width: 450px;
+    height: 500px;
+}
+
+#colada {
+    height: 350px;
+    width: 400px;
+}
+
+.hamCro {
+    overflow: hidden;
+    width: 450px;
+    height: 500px;
+}
+
+#hamCro {
+    height: 350px;
+    width: 400px;
+}
+
+.cortadito {
+    float: left;
+    width: 450px;
+    height: 500px;
+}
+
+#cortadito {
+    height: 350px;
+    width: 400px;
+}
+
+.cheeseCro {
+    overflow: hidden;
+    width: 450px;
+    height: 500px;
+}
+
+#cheeseCro {
+    height: 350px;
+    width: 400px;
+}
+
+.formTable {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.paymentInfo {
+
+    overflow: hidden;
+
+}
+
+.cardPay {
+
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
+.address {
+
+    float: left;
+
+}
+
+.addressInput {
+
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
+#city {
+    width: 25%;
+}
+
+#state {
+    width: 25%;
+}
+#zip {
+    width: 25%;
+}
+
+.cartContainer {
+
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#cartHeader {
+    text-align: center;
+}
+
+
+.cart-column {
+
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.cart-row{
+
+    display: flex;
+
+}
+
+.cartItem {
+    width: 350px;
+}
+
+.cartQuantity {
+
+    width: 100px;
+
+}
+
+.cartPrice {
+
+    width: 100px;
+
+}
+
+.cart-item-title {
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.btn-danger {
+
+    margin-top: 10px;
+    color: white;
+    background-color: #90BFB6;
+    font-size: large;
+    border: none;
+
+}
+
+.cart-total-price {
+
+    font-size: large;
+
+
+}
+
+.placeOrder {
+    margin-top: 40px;
+    display: table;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 30px;
+    background-color: #90BFB6;
+    font-weight: bold;
+
+}
+
+#placeOrder:hover {
+    background-color: lightslategrey;
+}
